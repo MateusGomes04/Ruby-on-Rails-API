@@ -7,6 +7,8 @@ ruby "2.7.2"
 gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 
 # Use sqlite3 as the database for Active Record
+
+gem 'rails-i18n'
 gem "sqlite3", "~> 1.4"
 
 
