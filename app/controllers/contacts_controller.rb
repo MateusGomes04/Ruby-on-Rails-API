@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts/1
   def show
-    render json: @contact, include: [:kind, :phones, :address]
+    render json: @contact, include: [:kind] #, meta: { author: "Jackson Pires" }   #, include: [:kind, :phones, :address]
   end
 
   # POST /contacts
@@ -49,6 +49,6 @@ class ContactsController < ApplicationController
       params.require(:contact).permit(
         :name, :email, :birthdate, :kind_id, 
         phones_attributes: [:id, :number, :_destroy],
-        address_attributes: [:id, :street, :city]
-    end
+        address_attributes: [:id, :street, :city])
+  end
 end
