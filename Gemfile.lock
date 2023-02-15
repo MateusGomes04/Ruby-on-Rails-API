@@ -90,6 +90,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-i18n (1.10.3)
+      devise (>= 4.8.0)
     devise_token_auth (1.2.1)
       bcrypt (~> 3.0)
       devise (> 3.5.2, < 5)
@@ -188,11 +190,18 @@ GEM
     timeout (0.3.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    versionist (2.0.1)
+      activesupport (>= 3)
+      railties (>= 3)
+      yard (~> 0.9.20)
     warden (1.2.9)
       rack (>= 2.0.9)
+    webrick (1.7.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    yard (0.9.28)
+      webrick (~> 1.7.0)
     zeitwerk (2.6.6)
 
 PLATFORMS
@@ -202,6 +211,7 @@ DEPENDENCIES
   active_model_serializers (~> 0.10.0)
   bootsnap
   debug
+  devise-i18n
   devise_token_auth
   faker
   jwt
@@ -212,6 +222,7 @@ DEPENDENCIES
   rails-i18n
   sqlite3 (~> 1.4)
   tzinfo-data
+  versionist
 
 RUBY VERSION
    ruby 2.7.2p137
