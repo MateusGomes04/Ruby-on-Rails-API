@@ -108,6 +108,18 @@ GEM
       reline (>= 0.3.0)
     jsonapi-renderer (0.2.2)
     jwt (2.7.0)
+    kaminari (1.2.2)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.2)
+      kaminari-activerecord (= 1.2.2)
+      kaminari-core (= 1.2.2)
+    kaminari-actionview (1.2.2)
+      actionview
+      kaminari-core (= 1.2.2)
+    kaminari-activerecord (1.2.2)
+      activerecord
+      kaminari-core (= 1.2.2)
+    kaminari-core (1.2.2)
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -215,6 +227,7 @@ DEPENDENCIES
   devise_token_auth
   faker
   jwt
+  kaminari
   pry-rails
   puma (~> 5.0)
   rack-cors
